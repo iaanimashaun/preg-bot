@@ -1,4 +1,4 @@
-runtime: python3
+runtime: python39
 env: standard
 
 handlers:
