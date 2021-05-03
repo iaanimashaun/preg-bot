@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-BOT</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" /> 
+</head>
+<body>
+    <div class="banner">
+
+    </div>
+    <div class="content">
+        <h1> COVID-BOT</h1>
+        <p>
+            Are you curious about the COVID-19 virus but you find the information on the internet a lot and overwhelming?<br>
+            COVID-BOT is here to the rescue. All you need do is enter your questions in the box below and the COVID-BOT will give you concise answers.<br>
+            The COVID-BOT saves you a lot of time and energy invested in sifting through tons of information available on the internet. 
+        </p>
+        <form method='POST' action='/querry'>
+            <label for="fname">Type your question in the box</label><br><br>
+            <textarea rows="5" cols="65" id="fname" name="question">
+            </textarea><br><br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div> 
+</body>
+</html>
