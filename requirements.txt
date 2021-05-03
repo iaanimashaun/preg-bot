@@ -17,9 +17,7 @@ requests
 sacremoses
 six
 tokenizers
-pytorch
-torchaudio
-torchvision
+
 tqdm
 transformers
 typing-extensions
