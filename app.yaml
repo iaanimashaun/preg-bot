@@ -1,5 +1,5 @@
 runtime: python3
-env: flex
+env: standard
 
 handlers:
 - url: /static
