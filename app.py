@@ -1,18 +1,18 @@
 from flask import Flask, render_template, request
 from transformers import pipeline
 nlp = pipeline("question-answering")
-application = Flask(__name__)
+app = Flask(__name__)
 
 
-application.config['ENV'] = 'development'
-application.config['DEBUG'] = True
-application.config['TESTING'] = True
+# app.config['ENV'] = 'development'
+# app.config['DEBUG'] = True
+# app.config['TESTING'] = True
 
-@application.route("/")
+@app.route("/")
 def home():
     return render_template('question.html')
 
-@application.route("/querry", methods=['POST'])
+@app.route("/querry", methods=['POST'])
 def querry():
     with open('static/preg.txt') as f:
         covid = f.readlines() 
@@ -29,4 +29,4 @@ def querry():
     return render_template('answer.html', ans=ans)
 
 if __name__ == "__main__":
-    application.run(debug=True)
+    app.run()
