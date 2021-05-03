@@ -17,7 +17,7 @@ requests
 sacremoses
 six
 tokenizers
-
+tensorflow
 tqdm
 transformers
 typing-extensions
