@@ -17,7 +17,9 @@ requests
 sacremoses
 six
 tokenizers
-tensorflow
+torch
+torchaudio
+torchvision
 tqdm
 transformers
 typing-extensions
