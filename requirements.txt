@@ -17,7 +17,7 @@ requests
 sacremoses
 six
 tokenizers
-torch
+pytorch
 torchaudio
 torchvision
 tqdm
